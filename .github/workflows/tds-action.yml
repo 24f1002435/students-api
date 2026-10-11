@@ -1,0 +1,19 @@
+
+name: IITM TDS GitHub Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 24f1002435@ds.study.iitm.ac.in
+        run: echo "Hello from IITM TDS GitHub Actions!"
+
+      - name: Finish
+        run: echo "Workflow completed successfully"
